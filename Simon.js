@@ -9,7 +9,7 @@ function startgame(){
     order = []
     counter = 0
     playorder()
-    document.getElementById("start").toggleAttribute("disabled")
+    document.getElementById("start").toggleAttribute("disabled",true)
 }
 
 async function playorder(){
@@ -91,5 +91,5 @@ function stopgame(){
         color.classList.remove("active")
     }
     },300)
-    document.getElementById("start").toggleAttribute("disabled")
+    document.getElementById("start").toggleAttribute("disabled",false)
 }
