@@ -16,7 +16,7 @@ header{
     align-items: center;
     position: relative;
     padding:2%;
-    background-color: cadetblue;
+    background-color: #3ea19b;
 }
 main{
     height: 100%;
@@ -27,6 +27,7 @@ main{
     position:absolute;
     top:0;
     left:0;
+    mix-blend-mode: multiply;
 }
 .logo:hover{
     cursor: pointer;
@@ -39,6 +40,7 @@ main{
 .links li {
     display: inline-block;
     height:10%;
+    margin:0
 }
 .simon{
     display:grid;
@@ -97,4 +99,36 @@ main{
 #four.active{
     background-color: blue;
     pointer-events: none;
+}
+
+.simonsbutton[beeping]{
+    pointer-events: none;
+}
+
+.life{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    margin-right: 2px;
+    display: inline-block;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 300ms;
+  }
+button:hover{
+    background-color: pink;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+button[disabled]{
+    pointer-events: none;
+    background-color: grey;
 }

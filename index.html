@@ -12,18 +12,21 @@
         <topnav>
             <img class="logo" src="logo.png" alt="logo"/>
             <ul class="links">
+                <li>
+                    <div id="lives">
+                        <div class="life"></div>
+                        <div class="life"></div>
+                        <div class="life"></div>
+                    </div>
+                </li>
                 <li><a href="#">link1</a></li>
                 <li><a href="#">link2</a></li>
                 <li><a href="#">link3</a></li>
+                <li> <button id="start" onclick="startgame()">start game</button></li>
+                <li><button onclick="stopgame()">stop game</button></li>
             </ul>
         </topnav>
-        <button onclick="playorder()">start game</button>
-        <button onclick="stopgame()">stop game</button>
-        <div id="lives">
-            <div>l</div>
-            <div>l</div>
-            <div>l</div>
-        </div>
+
         
     </header>
     <main>
@@ -37,4 +40,5 @@
 </body>
 <script src="Simon.js"></script>
 <script src="playersturn.js"></script>
+<script src="sounds.js"></script>
 </html>

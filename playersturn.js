@@ -1,11 +1,5 @@
 var order = []
 var counter = 0
-var snd2 = new Audio("beep-03.mp3")
-
-function beep2()
-{
-    snd2.play()
-}
 function playersturn()
 {
     if(counter == 0){
@@ -64,6 +58,7 @@ function cleanbuttons()
 
 function wrongnode()
 {
+    beep3()
     if(lives == 1){
         stopgame()
         return
