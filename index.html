@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <header>
+        <topnav>
+            <img class="logo" src="logo.png" alt="logo"/>
+            <ul class="links">
+                <li><a href="#">link1</a></li>
+                <li><a href="#">link2</a></li>
+                <li><a href="#">link3</a></li>
+            </ul>
+        </topnav>
+        <button onclick="playorder()">start game</button>
+        <button onclick="stopgame()">stop game</button>
+        <div id="lives">
+            <div>l</div>
+            <div>l</div>
+            <div>l</div>
+        </div>
+        
+    </header>
+    <main>
+        <div class="simon">
+            <div class="simonsbutton"id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti itaque dolorem sit id quae placeat at consequuntur, totam obcaecati repellat pariatur error, exercitationem est voluptatibus nihil expedita doloremque, quos asperiores.</div>
+            <div class="simonsbutton"id="two"></div>
+            <div class="simonsbutton"id="three">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, quisquam molestias? Eaque molestias unde delectus nihil, repellat cupiditate veritatis omnis architecto beatae. Est natus id ullam inventore officia maiores aut?</div>
+            <div class="simonsbutton"id="four"></div>
+        </div>
+    </main>
+</body>
+<script src="Simon.js"></script>
+<script src="playersturn.js"></script>
+</html>

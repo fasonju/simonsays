@@ -1,0 +1,100 @@
+html {
+    height: 100%;
+    overflow: hidden;
+  }
+body {
+    overflow:hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(61, 58, 58);
+} 
+
+header{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding:2%;
+    background-color: cadetblue;
+}
+main{
+    height: 100%;
+    overflow:auto;
+}
+.logo{
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+.links{
+    list-style: none;
+}
+
+.links li {
+    display: inline-block;
+    height:10%;
+}
+.simon{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-gap:10px;
+    height:80%;
+    
+}
+
+.simon div {
+    padding:0;
+    margin:0;
+}
+
+#one{   
+    background-color: rgb(114, 114, 40);
+    transition-duration: 0.3s;
+}
+#two{
+    background-color: darkgreen;
+    transition-duration: 0.3s;
+}
+#three{
+    background-color: darkred;
+    transition-duration: 0.3s;
+}
+#four{
+    background-color: darkblue;
+    transition-duration: 0.3s;
+}
+#one:hover{
+    background-color: yellow;
+    cursor: pointer;
+}#two:hover{
+    background-color: rgb(79, 228, 79);
+    cursor: pointer;
+}#three:hover{
+    background-color: red;
+    cursor: pointer;
+}#four:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+#one.active{
+    background-color: yellow;
+    pointer-events: none;
+}
+#two.active{
+    background-color: rgb(79, 228, 79);
+    pointer-events: none;
+}
+#three.active{
+    background-color: red;
+    pointer-events: none;
+}
+#four.active{
+    background-color: blue;
+    pointer-events: none;
+}
