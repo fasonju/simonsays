@@ -1,6 +1,8 @@
 var order = []
 var counter = 0
-function playersturn()
+sessionStorage
+sessionStorage.setItem("highscore","0")
+async function playersturn()
 {
     if(counter == 0){
         order = curr.slice()
@@ -34,7 +36,14 @@ function playersturn()
     }
     if(counter == curr.length){
         counter = 0
-        playorder()
+        setTimeout(function(){playorder()},300)
+        score +=1
+        document.getElementById("score").innerHTML ="score:" + score.toString()
+        if(score>parseInt(sessionStorage.getItem("highscore")))
+        {
+            sessionStorage.setItem("highscore",score.toString())
+            document.getElementById("highscore").innerHTML = "highscore:" + score.toString()
+        }
     }
 }
 

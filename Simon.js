@@ -1,6 +1,7 @@
 currentindex = 0
 var curr = []
 let lives = 3
+let currentscore = 0
 
 function startgame(){
     curr = []
@@ -10,6 +11,8 @@ function startgame(){
     counter = 0
     playorder()
     document.getElementById("start").toggleAttribute("disabled",true)
+    score = 0
+    document.getElementById("score").innerHTML ="score: 0"
 }
 
 async function playorder(){
@@ -20,11 +23,11 @@ async function playorder(){
     }
     color = Math.floor(Math.random() * 4)
     curr.push(color)
-    timeout = 300
+    timeout = 500
     for(let nums of curr)
     {
         setTimeout(function(){lightup(nums);beep()},timeout)
-        timeout+=300
+        timeout+=500
     }
     setTimeout(function(){for(var button of buttons)
         {

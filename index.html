@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon</title>
     <link rel="stylesheet" href="index.css"/>
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <style>
+        a:link{
+          text-decoration: none!important;
+          cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,21 +20,23 @@
             <img class="logo" src="logo.png" alt="logo"/>
             <ul class="links">
                 <li>
+                    <div class="scores">
+                        <p id = "score">score: 0</p>
+                        <P id= "highscore">highscore:0</P>
+                    </div>
+                </li>
+                <li>
                     <div id="lives">
                         <div class="life"></div>
                         <div class="life"></div>
                         <div class="life"></div>
                     </div>
                 </li>
-                <li><a href="#">link1</a></li>
-                <li><a href="#">link2</a></li>
-                <li><a href="#">link3</a></li>
                 <li> <button id="start" onclick="startgame()">start game</button></li>
                 <li><button onclick="stopgame()">stop game</button></li>
+                <li><a href="https://fasonju.github.io/">my other project</a></li>
             </ul>
-        </topnav>
-
-        
+        </topnav> 
     </header>
     <main>
         <div class="simon">
