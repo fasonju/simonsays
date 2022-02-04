@@ -16,7 +16,7 @@ header{
     align-items: center;
     position: relative;
     padding:2%;
-    background-color: #3ea19b;
+    background-color: rgb(209, 173, 106);
 }
 main{
     height: 100%;
@@ -132,3 +132,10 @@ button[disabled]{
     pointer-events: none;
     background-color: grey;
 }
+
+.scores p{
+    padding:0;
+    margin:0;
+}
+
+
